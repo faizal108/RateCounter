@@ -1,240 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
         <Button
-            android:id="@+id/time_activity_btn"
+            android:id="@+id/mm_activity_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TIME"
-            android:layout_gravity="end"
+            android:text="MM"
+            android:layout_gravity="start"
             android:layout_margin="10dp"/>
-
-        <TableLayout
-            android:id="@+id/mm_table"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:padding="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:text="MM"
-                android:textSize="30dp"
-                android:textStyle="bold" />
-
-
-            <TableRow
-                android:background="@color/table_header"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="CUTTING (mm)"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="RATE / meter"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text=" TOTAL Rs."
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-            </TableRow>
-
-            <TableRow android:padding="10dp" android:layout_marginBottom="10dp">
-
-                <EditText
-                    android:id="@+id/cutting_mm"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:hint="123***" />
-
-                <EditText
-                    android:id="@+id/cutting_rate"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:hint="123***" />
-
-                <EditText
-                    android:id="@+id/cutting_total"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:hint="123***" />
-            </TableRow>
-
-            <TableRow
-                android:background="@color/table_header"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TRAVEL (mm)"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="RATE / meter"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text=" TOTAL Rs."
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-            </TableRow>
-
-            <TableRow android:padding="10dp" android:layout_marginBottom="10dp">
-
-                <EditText
-                    android:id="@+id/travel_mm"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:hint="123***" />
-
-                <EditText
-                    android:id="@+id/travel_rate"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:hint="123***" />
-
-                <EditText
-                    android:id="@+id/travel_total"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:hint="123***" />
-            </TableRow>
-
-            <TableRow
-                android:background="@color/table_header"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TOTAL (mm)"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text=" TOTAL Rs."
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-            </TableRow>
-
-            <TableRow android:padding="10dp" android:layout_marginBottom="10dp">
-
-                <EditText
-                    android:id="@+id/total_mm"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:hint="123***" />
-
-                <EditText
-                    android:id="@+id/all_total"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:hint="123***" />
-            </TableRow>
-
-            <TableRow android:padding="10dp">
-
-                <Button
-                    android:id="@+id/clearbtnmm"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/btn_clear"
-                    android:text="clear"
-                    android:textAllCaps="true"
-                    android:textSize="12dp" />
-
-                <Button
-                    android:id="@+id/donebtnmm"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/btn_done"
-                    android:text="done"
-                    android:textAllCaps="true"
-                    android:textSize="12dp" />
-            </TableRow>
-
-        </TableLayout>
-
         <TableLayout
             android:id="@+id/time_table"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:padding="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:visibility="gone">
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/txt2"
